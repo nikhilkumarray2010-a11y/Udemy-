@@ -1,0 +1,15 @@
+{
+  "name": "Udemy Bot",
+  "description": "Telegram + Selenium Udemy Login Bot",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    { "url": "heroku/python" },
+    { "url": "https://github.com/heroku/heroku-buildpack-google-chrome" },
+    { "url": "https://github.com/heroku/heroku-buildpack-chromedriver" }
+  ]
+}
